@@ -89,23 +89,28 @@ body {
 
 .action {
     font-weight: 700;
-    color: hsl(240, 75%, 98%);
+    color: hsl(240, 14%, 88%);
     padding: .7rem;
     margin: .5rem;
     border: 1px solid rgb(170, 168, 168);
     border-radius: .2rem;
-    
+
 }
 
 ::placeholder {
     font-size: .8rem;
     font-weight: 100;
-    color: hsl(240, 3%, 81%);
+    color: hsl(240, 1%, 50%);
 }
 
 .btn {
     background-color: hsl(224, 93%, 58%);
     border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: .8;
 }
 
 .stayproductive {
@@ -130,6 +135,11 @@ body {
     align-items: center;
     gap: .1rem;
     text-align: center;
+}
+
+.see_how:hover {
+    cursor: pointer;
+    opacity: .8;
 }
 
 hr {
@@ -198,6 +208,10 @@ hr {
     color: hsl(0, 38%, 92%);
 }
 
+.footer-link:hover {
+    color: rgb(48, 101, 248);
+}
+
 .li_with_icons {
     display: flex;
     align-items: center;
@@ -213,6 +227,11 @@ hr {
     margin: .5rem;
     border: 1px solid hsl(0, 38%, 92%);
     border-radius: 50%;
+}
+
+.fa-brands:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(36%) sepia(45%) saturate(2310%) hue-rotate(207deg) brightness(93%) contrast(111%);
 }
 
 /* media queries for larger screens */
@@ -290,7 +309,7 @@ hr {
         padding: 2rem;
     }
 
-    .call-to-action .input{
+    .call-to-action .input {
         flex-direction: column;
     }
 
@@ -316,7 +335,7 @@ hr {
         padding: 0;
     }
 
-    .top{
+    .top {
         margin-top: -3rem;
     }
 }
